@@ -7,7 +7,7 @@ const About = () => {
         <div>
             <div className='bg-[#f2f7fc] relative sm:px-[100px] px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 items-center justify-center' style={{ backgroundImage: `url(${about})`, backgroundSize: 'cover', backgroundPosition: 'top', }}>
                 <div className='absolute top-0 left-0 w-full h-full bg-black/60 z-10'></div>
-                <div className='relative z-20 flex flex-col items-center'>
+                <div className='relative z-20 flex flex-col items-center gap-3'>
                     <p className='text-[12px] px-3 py-1 bg-yellow-50 rounded-md text-yellow-600 w-fit '>Professional Security Services</p>
                     <div className="flex flex-col gap-2 items-center justify-center">
                         <h1 className="sm:text-4xl text-2xl font-bold text-center text-white">
@@ -27,15 +27,15 @@ const About = () => {
                     <p className='text-gray-600'>To empower organizations with strategic solutions that transform complex challenges into successful project outcomes. We bridge the gap between vision and execution through expert advocacy, innovative funding strategies, and comprehensive EPC consultancy.</p>
                     <ul className='flex flex-col gap-2'>
                         <li className='flex items-center text-gray-600 gap-2 text-sm'>
-                            <CheckCheck color='gold'  />
+                            <CheckCheck color='gold' />
                             Strategic guidance through every project phase
                         </li>
                         <li className='flex items-center text-gray-600 gap-2 text-sm'>
-                            <CheckCheck color='gold'  />
+                            <CheckCheck color='gold' />
                             Innovative solutions for complex challenges
                         </li>
                         <li className='flex items-center text-gray-600 gap-2 text-sm'>
-                            <CheckCheck color='gold'  />
+                            <CheckCheck color='gold' />
                             Sustainable impact for communities worldwide
                         </li>
                     </ul>
@@ -108,6 +108,56 @@ const About = () => {
                             <p className='text-gray-500 text-center'>Environmental responsibility and social impact are integral to our project approach.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='bg-black px-[40px] py-[60px] border-b border-gray-800 flex flex-col text-white'>
+                <div className='flex flex-col items-center justify-center mb-[40px]'>
+                    <h1 className='font-bold text-white text-3xl'>Our Achievements</h1>
+                    <p className='text-gray-500'>Numbers that reflect our commitment to excellence and client success.</p>
+                </div>
+                <div className='grid grid-cols-6 gap-4'>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h1 className='text-3xl font-bold text-yellow-500'>84+</h1>
+                        <p className='font-semibold'>Successful Projects</p>
+                        <p className='text-gray-500 text-sm'>Delivered across 6 sectors</p>
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h1 className='text-3xl font-bold text-yellow-500'>$2.7B+</h1>
+                        <p className='font-semibold'>Total Project Value</p>
+                        <p className='text-gray-500 text-sm'>Managed and secured</p>
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h1 className='text-3xl font-bold text-yellow-500'>15+</h1>
+                        <p className='font-semibold'>Countries</p>
+                        <p className='text-gray-500 text-sm'>Global presence</p>
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h1 className='text-3xl font-bold text-yellow-500'>98%</h1>
+                        <p className='font-semibold'>Success Rate</p>
+                        <p className='text-gray-500 text-sm'>Project completion</p>
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h1 className='text-3xl font-bold text-yellow-500'>5+</h1>
+                        <p className='font-semibold'>Years</p>
+                        <p className='text-gray-500 text-sm'>Industry experience</p>
+                    </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h1 className='text-3xl font-bold text-yellow-500'>120+</h1>
+                        <p className='font-semibold'>Expert Team</p>
+                        <p className='text-gray-500 text-sm'>Professionals worldwide</p>
+                    </div>
+                </div>
+            </div>
+            <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 flex items-center justify-between gap-6'>
+                <div className='w-[50%] flex flex-col gap-2'>
+                    <h1 className='text-3xl text-white font-bold'>Stay Updated with Industry Insights</h1>
+                    <p className='text-gray-500 text-sm'>Get the latest updates on EPC projects, funding opportunities, and industry trends directly in your inbox. Join our network of industry professionals.</p>
+                </div>
+                <div className='w-[50%]'>
+                    <form action="" className='flex items-center gap-2 w-[85%]'>
+                        <input type="email" className='border border-gray-600 text-gray-600 rounded-md bg-[#1e293b] p-2 w-full' placeholder='Enter your email address' />
+                        <button className='bg-yellow-500 px-3 py-2 rounded-md text-sm'>Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
