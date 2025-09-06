@@ -1,0 +1,117 @@
+import React from 'react'
+import about from '../assets/about.jpg'
+import { CheckCheck, Globe, Heart, Shield, Target, Trophy, Users } from 'lucide-react'
+
+const About = () => {
+    return (
+        <div>
+            <div className='bg-[#f2f7fc] relative sm:px-[100px] px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 items-center justify-center' style={{ backgroundImage: `url(${about})`, backgroundSize: 'cover', backgroundPosition: 'top', }}>
+                <div className='absolute top-0 left-0 w-full h-full bg-black/60 z-10'></div>
+                <div className='relative z-20 flex flex-col items-center'>
+                    <p className='text-[12px] px-3 py-1 bg-yellow-50 rounded-md text-yellow-600 w-fit '>Professional Security Services</p>
+                    <div className="flex flex-col gap-2 items-center justify-center">
+                        <h1 className="sm:text-4xl text-2xl font-bold text-center text-white">
+                            Building Tomorrow's{" "}
+                            <span className="bg-linear-to-r from-yellow-200 via-amber-400 to-orange-600 bg-clip-text text-transparent">
+                                Infrastructure {" "}
+                            </span>
+                            Today
+                        </h1>
+                        <p className="text-gray-300 text-center sm:w-[60%] sm:text-normal text-sm">Founded on the principles of excellence and innovation, EPC Partnaz has emerged as a trusted partner for complex infrastructure and industrial projects worldwide.</p>
+                    </div>
+                </div>
+            </div>
+            <div className='px-[40px] py-[60px] bg-white flex justify-between gap-6'>
+                <div className='flex flex-col gap-4 w-[50%]'>
+                    <h1 className='font-bold text-3xl'>Our Mission</h1>
+                    <p className='text-gray-600'>To empower organizations with strategic solutions that transform complex challenges into successful project outcomes. We bridge the gap between vision and execution through expert advocacy, innovative funding strategies, and comprehensive EPC consultancy.</p>
+                    <ul className='flex flex-col gap-2'>
+                        <li className='flex items-center text-gray-600 gap-2 text-sm'>
+                            <CheckCheck color='gold'  />
+                            Strategic guidance through every project phase
+                        </li>
+                        <li className='flex items-center text-gray-600 gap-2 text-sm'>
+                            <CheckCheck color='gold'  />
+                            Innovative solutions for complex challenges
+                        </li>
+                        <li className='flex items-center text-gray-600 gap-2 text-sm'>
+                            <CheckCheck color='gold'  />
+                            Sustainable impact for communities worldwide
+                        </li>
+                    </ul>
+                </div>
+                <div className='bg-gray-100 rounded-lg p-4 w-[50%]'>
+                    <div className='flex flex-col gap-4'>
+                        <h1 className='font-bold text-3xl'>Our Story</h1>
+                        <p className='text-gray-700'>Founded in 2020 by a team of industry veterans, EPC Partnaz was born from the recognition that successful infrastructure projects require more than technical expertise—they need strategic vision, financial innovation, and unwavering advocacy.</p>
+                        <p className='text-gray-700'>Today, we've grown into a global consultancy with offices across three continents, serving clients in diverse sectors while maintaining our core commitment to excellence and integrity.</p>
+                    </div>
+                </div>
+            </div>
+            <div className='px-[40px] py-[60px] bg-[#f9fafc]'>
+                <div className='flex flex-col gap-2 items-center justify-center mb-[40px]'>
+                    <h1 className='text-3xl font-bold'>Our Values</h1>
+                    <p className='text-gray-600'>The principles that guide every decision and drive our commitment to client success.</p>
+                </div>
+                <div className='grid grid-cols-3 gap-6'>
+                    <div className='flex flex-col gap-2 p-8 rounded-md items-center justify-center shadow-md bg-white'>
+                        <div className='h-[60px] w-[60px] rounded-md bg-yellow-500 flex items-center justify-center'>
+                            <Target size={30} color='black' />
+                        </div>
+                        <div className='flex flex-col gap-3 items-center justify-center'>
+                            <h1 className='font-bold'>Excellence</h1>
+                            <p className='text-gray-500 text-center'>We deliver exceptional results through meticulous attention to detail and unwavering commitment to quality.</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-2 p-8 rounded-md items-center justify-center shadow-md bg-white'>
+                        <div className='h-[60px] w-[60px] rounded-md bg-yellow-500 flex items-center justify-center'>
+                            <Shield size={30} color='black' />
+                        </div>
+                        <div className='flex flex-col gap-3 items-center justify-center'>
+                            <h1 className='font-bold'>Integrity</h1>
+                            <p className='text-gray-500 text-center'>Our foundation is built on trust, transparency, and ethical business practices in every engagement.</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-2 p-8 rounded-md items-center justify-center shadow-md bg-white'>
+                        <div className='h-[60px] w-[60px] rounded-md bg-yellow-500 flex items-center justify-center'>
+                            <Users size={30} color='black' />
+                        </div>
+                        <div className='flex flex-col gap-3 items-center justify-center'>
+                            <h1 className='font-bold'>Collaboration</h1>
+                            <p className='text-gray-500 text-center'>We believe in the power of partnership, working closely with clients to achieve shared success.</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-2 p-8 rounded-md items-center justify-center shadow-md bg-white'>
+                        <div className='h-[60px] w-[60px] rounded-md bg-yellow-500 flex items-center justify-center'>
+                            <Globe size={30} color='black' />
+                        </div>
+                        <div className='flex flex-col gap-3 items-center justify-center'>
+                            <h1 className='font-bold'>Global Perspective</h1>
+                            <p className='text-gray-500 text-center'>Our international experience brings valuable insights to complex cross-border projects.</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-2 p-8 rounded-md items-center justify-center shadow-md bg-white'>
+                        <div className='h-[60px] w-[60px] rounded-md bg-yellow-500 flex items-center justify-center'>
+                            <Trophy size={30} color='black' />
+                        </div>
+                        <div className='flex flex-col gap-3 items-center justify-center'>
+                            <h1 className='font-bold'>Innovation</h1>
+                            <p className='text-gray-500 text-center'>We embrace cutting-edge solutions and creative approaches to overcome industry challenges.</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-2 p-8 rounded-md items-center justify-center shadow-md bg-white'>
+                        <div className='h-[60px] w-[60px] rounded-md bg-yellow-500 flex items-center justify-center'>
+                            <Heart size={30} color='black' />
+                        </div>
+                        <div className='flex flex-col gap-3 items-center justify-center'>
+                            <h1 className='font-bold'>Sustainability</h1>
+                            <p className='text-gray-500 text-center'>Environmental responsibility and social impact are integral to our project approach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default About
