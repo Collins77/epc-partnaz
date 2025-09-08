@@ -1,6 +1,6 @@
 import React from 'react'
 import inv from '../../assets/investment.jpg'
-import { Briefcase, DollarSign, FileText, Globe, Scale, Shield, Target, TrendingUp, User, Users } from 'lucide-react'
+import { Briefcase, DollarSign, Globe, Target, TrendingUp, Users } from 'lucide-react'
 
 const Funding = () => {
     return (
@@ -243,7 +243,7 @@ const Funding = () => {
             <div className='px-[40px] py-[60px] bg-linear-to-r from-yellow-400 via-orange-500 to-yellow-600 flex flex-col gap-3 items-center justify-center'>
                 <h1 className='text-3xl font-bold'>Ready to Secure Funding for Your Project?</h1>
                 <p className='text-gray-700 w-[60%] text-center'>Connect with our funding experts to explore capital opportunities and bring your vision to life.</p>
-                <button className='bg-black px-4 py-2 text-white cursor-pointer rounded-md hover:bg-yellow-500 transition-all duration-300'>Exxplore Funding Options</button>
+                <button className='bg-black px-4 py-2 text-white cursor-pointer rounded-md hover:bg-yellow-500 transition-all duration-300'>Explore Funding Options</button>
             </div>
             <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 flex items-center justify-between gap-6'>
                 <div className='w-[50%] flex flex-col gap-2'>
