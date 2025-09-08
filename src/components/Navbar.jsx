@@ -12,9 +12,9 @@ const Navbar = () => {
         {
             name: "Services", path: "/services",
             dropdown: [
-                { name: "CCTV Installation", path: "/services/cctv" },
-                { name: "Biometric Access", path: "/services/biometric" },
-                { name: "Electric Fences", path: "/services/fences" },
+                { name: "Advocacy & Representation", path: "/services/advocacy" },
+                { name: "Investment Funding", path: "/services/funding" },
+                { name: "EPC Consultancy", path: "/services/consultancy" },
             ]
         },
         { name: "Funding", path: "/funding" },
