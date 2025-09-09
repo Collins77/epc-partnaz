@@ -11,6 +11,7 @@ import Energy from "./pages/sectors/Energy"
 import Oil from "./pages/sectors/Oil"
 import Infrastucture from "./pages/sectors/Infrastucture"
 import Plants from "./pages/sectors/Plants"
+import Water from "./pages/sectors/Water"
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/sectors/oil" element={<Oil />} />
           <Route path="/sectors/infrastructure" element={<Infrastucture />} />
           <Route path="/sectors/plants" element={<Plants />} />
+          <Route path="/sectors/water" element={<Water />} />
         </Route>
       </Routes>
     </>
