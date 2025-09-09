@@ -10,6 +10,7 @@ import Contact from "./pages/Contact"
 import Energy from "./pages/sectors/Energy"
 import Oil from "./pages/sectors/Oil"
 import Infrastucture from "./pages/sectors/Infrastucture"
+import Plants from "./pages/sectors/Plants"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/sectors/energy" element={<Energy />} />
           <Route path="/sectors/oil" element={<Oil />} />
           <Route path="/sectors/infrastructure" element={<Infrastucture />} />
+          <Route path="/sectors/plants" element={<Plants />} />
         </Route>
       </Routes>
     </>
