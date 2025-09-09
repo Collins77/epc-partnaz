@@ -24,7 +24,7 @@ const Navbar = () => {
             dropdown: [
                 { name: "Energy & Power", path: "/sectors/energy" },
                 { name: "Oil & Gas", path: "/sectors/oil" },
-                { name: "Infrastructure", path: "/sectors/infrastucture" },
+                { name: "Infrastructure", path: "/sectors/infrastructure" },
                 { name: "Industrial Plants", path: "/sectors/plants" },
                 { name: "Water & Environment", path: "/sectors/water" },
                 { name: "Special Projects", path: "/sectors/special-projects" },
