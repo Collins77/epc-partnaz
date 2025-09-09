@@ -5,7 +5,7 @@ import { Droplets, Funnel, Leaf, Recycle } from 'lucide-react'
 const Water = () => {
     return (
         <div>
-            <div className='px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 justify-center relative' style={{ backgroundImage: `url(${env})`, backgroundSize: 'cover', backgroundPosition: 'bottom', backgroundRepeat: 'no-repeat' }}>
+            <div className='px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 justify-center relative' style={{ backgroundImage: `url(${env})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='absolute top-0 left-0 w-full h-full bg-black/60 z-10'></div>
                 <div className='relative z-20 flex flex-col gap-4'>
                     <div className="flex flex-col gap-2 items-start justify-center">

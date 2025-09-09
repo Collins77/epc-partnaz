@@ -12,6 +12,7 @@ import Oil from "./pages/sectors/Oil"
 import Infrastucture from "./pages/sectors/Infrastucture"
 import Plants from "./pages/sectors/Plants"
 import Water from "./pages/sectors/Water"
+import Special from "./pages/sectors/Special"
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/sectors/infrastructure" element={<Infrastucture />} />
           <Route path="/sectors/plants" element={<Plants />} />
           <Route path="/sectors/water" element={<Water />} />
+          <Route path="/sectors/special-projects" element={<Special />} />
         </Route>
       </Routes>
     </>
