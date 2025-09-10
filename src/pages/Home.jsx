@@ -65,7 +65,7 @@ const Home = () => {
                             <button onClick={() => navigate("/projects")} className="bg-white text-yellow-500 text-sm border border-yellow-400 px-6 py-2 rounded-md cursor-pointer hover:bg-yellow-500 hover:text-white transition-all duration-300">View Projects</button>
                         </div>
                     </div>
-                    <div className='sm:w-[50%] w-full flex flex-col relative px-[20px] justify-center gap-6'>
+                    <div className='sm:w-[50%] w-full flex flex-col relative sm:px-[20px] justify-center gap-6'>
                         <div className='w-full border border-white/40 rounded-md bg-white/20 flex gap-6 text-white p-4 hover:bg-white/30'>
                             <div>
                                 <Scale size={30} color='gold' />
@@ -168,7 +168,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='p-3'>
-                            <a href="/services/advocacy" className='flex items-center gap-1 text-sm text-yellow-500 underline justify-end'>
+                            <a href="/services/consultancy" className='flex items-center gap-1 text-sm text-yellow-500 underline justify-end'>
                                 Learn More
                                 <ArrowRight color='gold' size={20} />
                             </a>
