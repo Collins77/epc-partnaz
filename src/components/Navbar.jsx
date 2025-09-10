@@ -17,7 +17,7 @@ const Navbar = () => {
                 { name: "EPC Consultancy", path: "/services/consultancy" },
             ]
         },
-        { name: "Funding", path: "/funding" },
+        { name: "Funding", path: "/services/funding" },
         { name: "Projects", path: "/projects" },
         {
             name: "Sectors", path: "/sectors",
