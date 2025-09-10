@@ -14,7 +14,7 @@ const Energy = () => {
                         </h1>
                         <p className="text-gray-300 sm:w-[60%] sm:text-normal text-sm sm:text-start text-center">Powering the future with sustainable energy solutions, advanced grid technologies, and comprehensive power infrastructure development across the globe.</p>
                     </div>
-                    <div className='grid grid-cols-3 sm:gap-2 gap-6 items-start w-[50%]'>
+                    <div className='grid grid-cols-3 sm:gap-2 gap-6 items-start sm:w-[50%]'>
                         <div className='flex items-center flex-col'>
                             <h1 className='sm:text-3xl text-xl font-bold text-yellow-500'>18+</h1>
                             <p className='sm:text-sm text-[12px] text-gray-300 '>Years Experience</p>

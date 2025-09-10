@@ -8,23 +8,23 @@ const Oil = () => {
             <div className='px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 justify-center relative' style={{ backgroundImage: `url(${oilo})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                 <div className='absolute top-0 left-0 w-full h-full bg-black/60 z-10'></div>
                 <div className='relative z-20 flex flex-col gap-4'>
-                    <div className="flex flex-col gap-2 items-start justify-center">
+                    <div className="flex flex-col gap-2 sm:items-start items-center justify-center">
                         <h1 className="sm:text-4xl text-2xl font-bold bg-linear-to-r from-yellow-200 via-amber-400 to-orange-600 bg-clip-text text-transparent">
                             Oil & Gas
                         </h1>
-                        <p className="text-gray-300 sm:w-[60%] sm:text-normal text-sm">Delivering comprehensive solutions across the entire oil and gas value chain, from exploration and production to refining and distribution worldwide.</p>
+                        <p className="text-gray-300 sm:w-[60%] sm:text-normal text-sm sm:text-start text-center">Delivering comprehensive solutions across the entire oil and gas value chain, from exploration and production to refining and distribution worldwide.</p>
                     </div>
-                    <div className='grid grid-cols-3 gap-2 items-start w-[50%]'>
+                    <div className='grid grid-cols-3 gap-2 sm:items-start items-center sm:w-[50%]'>
                         <div className='flex items-center flex-col'>
-                            <h1 className='text-3xl font-bold text-yellow-500'>25+</h1>
+                            <h1 className='sm:text-3xl text-xl font-bold text-yellow-500'>25+</h1>
                             <p className='text-sm text-gray-300'>Years Experience</p>
                         </div>
                         <div className='flex items-center flex-col'>
-                            <h1 className='text-3xl font-bold text-yellow-500'>75+</h1>
+                            <h1 className='sm:text-3xl text-xl font-bold text-yellow-500'>75+</h1>
                             <p className='text-sm text-gray-300'>Projects Completed</p>
                         </div>
                         <div className='flex items-center flex-col'>
-                            <h1 className='text-3xl font-bold text-yellow-500'>$15B+</h1>
+                            <h1 className='sm:text-3xl text-xl font-bold text-yellow-500'>$15B+</h1>
                             <p className='text-sm text-gray-300'>Project Value</p>
                         </div>
                     </div>
@@ -33,10 +33,10 @@ const Oil = () => {
             </div>
             <div className='bg-white px-[40px] py-[60px]'>
                 <div className='flex flex-col gap-1 items-center mb-[40px]'>
-                    <h1 className='font-bold text-3xl'>Full-Spectrum Services</h1>
-                    <p className='text-gray-500 text-center w-[60%]'>From upstream exploration to downstream processing, we provide comprehensive engineering and consulting services across the entire oil and gas industry.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl'>Full-Spectrum Services</h1>
+                    <p className='text-gray-500 text-center sm:w-[60%] sm:text-base text-sm'>From upstream exploration to downstream processing, we provide comprehensive engineering and consulting services across the entire oil and gas industry.</p>
                 </div>
-                <div className='grid grid-cols-4 gap-6'>
+                <div className='sm:grid sm:grid-cols-4 flex flex-col gap-6'>
                     <div className='flex flex-col gap-3 items-center hover:shadow-md p-3 rounded-md'>
                         <div className='w-[50px] h-[50px] bg-yellow-500 rounded-md flex items-center justify-center'>
                             <Wrench />
@@ -67,11 +67,11 @@ const Oil = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#f9fafc] px-[40px] py-[60px] flex gap-6 items-center'>
-                <div className='w-[50%] flex flex-col gap-4'>
-                    <h1 className='text-2xl font-bold'>Technical Expertise</h1>
+            <div className='bg-[#f9fafc] px-[40px] py-[60px] flex sm:flex-row flex-col gap-6 items-center'>
+                <div className='sm:w-[50%] flex flex-col gap-4'>
+                    <h1 className='sm:text-2xl text-xl font-bold'>Technical Expertise</h1>
                     <p className='text-gray-500 text-sm'>Our multidisciplinary team combines deep industry knowledge with cutting-edge technology to deliver superior results in the most challenging environments.</p>
-                    <div className='grid grid-cols-2 gap-4'>
+                    <div className='sm:grid sm:grid-cols-2 flex flex-col gap-4'>
                         <div className='p-6 flex flex-col gap-2 rounded-md shadow-lg bg-white'>
                             <h1 className='font-bold text-sm'>Deepwater Engineering</h1>
                             <p className='text-sm text-gray-500'>Advanced subsea and offshore solutions</p>
@@ -90,38 +90,38 @@ const Oil = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-[50%] p-6 bg-amber-100 rounded-md flex flex-col gap-4'>
-                    <h1 className='text-2xl font-bold'>Why Choose Our Oil & Gas Expertise?</h1>
+                <div className='sm:w-[50%] w-full p-6 bg-amber-100 rounded-md flex flex-col gap-4'>
+                    <h1 className='sm:text-2xl text-xl font-bold'>Why Choose Our Oil & Gas Expertise?</h1>
                     <div className='flex flex-col gap-4'>
                         <div className='flex gap-3 items-center'>
                             <Dot className='text-yellow-500' />
-                            <p className='text-gray-500'>25+ years of upstream and downstream experience</p>
+                            <p className='text-gray-500 sm:text-base text-sm'>25+ years of upstream and downstream experience</p>
                         </div>
                         <div className='flex gap-3 items-center'>
                             <Dot className='text-yellow-500' />
-                            <p className='text-gray-500'>Global network of certified contractors and suppliers</p>
+                            <p className='text-gray-500 sm:text-base text-sm'>Global network of certified contractors and suppliers</p>
                         </div>
                         <div className='flex gap-3 items-center'>
                             <Dot className='text-yellow-500' />
-                            <p className='text-gray-500'>Proven track record in challenging environments</p>
+                            <p className='text-gray-500 sm:text-base text-sm'>Proven track record in challenging environments</p>
                         </div>
                         <div className='flex gap-3 items-center'>
                             <Dot className='text-yellow-500' />
-                            <p className='text-gray-500'>Comprehensive safety and environmental compliance</p>
+                            <p className='text-gray-500 sm:text-base text-sm'>Comprehensive safety and environmental compliance</p>
                         </div>
                         <div className='flex gap-3 items-center'>
                             <Dot className='text-yellow-500' />
-                            <p className='text-gray-500'>Advanced technology integration and innovation</p>
+                            <p className='text-gray-500 sm:text-base text-sm'>Advanced technology integration and innovation</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='bg-white px-[40px] py-[60px]'>
                 <div className='flex flex-col gap-1 items-center mb-[40px]'>
-                    <h1 className='font-bold text-3xl'>Major Projects</h1>
-                    <p className='text-gray-500 text-center w-[60%]'>Showcasing our most significant oil and gas projects that demonstrate our capabilities in complex, large-scale developments.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl'>Major Projects</h1>
+                    <p className='text-gray-500 text-center sm:w-[60%] sm:text-base text-sm'>Showcasing our most significant oil and gas projects that demonstrate our capabilities in complex, large-scale developments.</p>
                 </div>
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='sm:grid sm:grid-cols-3 flex flex-col gap-6'>
                     <div className='p-4 bg-white shadow-md rounded-md flex flex-col gap-3'>
                         <div className='flex items-center justify-between'>
                             <h1 className='font-bold text-sm'>Offshore Platform - North Sea</h1>
@@ -177,10 +177,10 @@ const Oil = () => {
             </div>
             <div className='bg-black px-[40px] py-[60px]'>
                 <div className='flex flex-col gap-1 items-center mb-[40px]'>
-                    <h1 className='font-bold text-3xl text-white'>Global Reach</h1>
-                    <p className='text-gray-300 text-center w-[60%]'>Operating across major oil and gas regions worldwide, delivering projects that meet the highest international standards.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl text-white'>Global Reach</h1>
+                    <p className='text-gray-300 text-center sm:w-[60%] sm:text-base text-sm'>Operating across major oil and gas regions worldwide, delivering projects that meet the highest international standards.</p>
                 </div>
-                <div className='grid grid-cols-5 gap-4'>
+                <div className='sm:grid sm:grid-cols-5 flex flex-col gap-4'>
                     <div className='flex flex-col gap-3 items-center'>
                         <div className='w-[60px] h-[60px] rounded-full bg-yellow-500 flex items-center justify-center'>
                             <h1 className='font-bold text-xl'>ME</h1>
@@ -219,16 +219,16 @@ const Oil = () => {
                 </div>
             </div>
             <div className='px-[40px] py-[60px] bg-linear-to-r from-yellow-400 via-orange-500 to-yellow-600 flex flex-col gap-3 items-center justify-center'>
-                <h1 className='text-3xl font-bold'>Ready to Develop Your Next Oil & Gas Project?</h1>
-                <p className='text-gray-700 w-[60%] text-center'>Partner with our experienced team to navigate complex projects from concept to completion. We deliver results that exceed expectations.</p>
+                <h1 className='sm:text-3xl text-xl font-bold'>Ready to Develop Your Next Oil & Gas Project?</h1>
+                <p className='text-gray-700 sm:w-[60%] sm:text-base text-sm text-center'>Partner with our experienced team to navigate complex projects from concept to completion. We deliver results that exceed expectations.</p>
                 <button className='bg-black px-4 py-2 text-white cursor-pointer rounded-md hover:bg-yellow-500 transition-all duration-300'>Discuss Your Project</button>
             </div>
-            <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 flex items-center justify-between gap-6'>
-                <div className='w-[50%] flex flex-col gap-2'>
-                    <h1 className='text-3xl text-white font-bold'>Stay Updated with Industry Insights</h1>
-                    <p className='text-gray-500 text-sm'>Get the latest updates on EPC projects, funding opportunities, and industry trends directly in your inbox. Join our network of industry professionals.</p>
+            <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 sm:flex sm:flex-row sm:items-center sm:justify-between gap-6 flex flex-col'>
+                <div className='sm:w-[50%] flex flex-col gap-2'>
+                    <h1 className='sm:text-3xl text-xl text-white font-bold'>Stay Updated with Industry Insights</h1>
+                    <p className='text-gray-500 sm:text-sm text-[12px]'>Get the latest updates on EPC projects, funding opportunities, and industry trends directly in your inbox. Join our network of industry professionals.</p>
                 </div>
-                <div className='w-[50%]'>
+                <div className='sm:w-[50%]'>
                     <form action="" className='flex items-center gap-2 w-[85%]'>
                         <input type="email" className='border border-gray-600 text-gray-600 rounded-md bg-[#1e293b] p-2 w-full' placeholder='Enter your email address' />
                         <button className='bg-yellow-500 px-3 py-2 rounded-md text-sm'>Subscribe</button>
