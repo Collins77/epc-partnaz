@@ -19,7 +19,7 @@ const Home = () => {
         <>
             {/* Hero */}
             <div
-                className='w-full bg-white h-[80vh] relative'
+                className='w-full bg-white sm:h-[80vh] h-fit relative'
                 style={{
                     backgroundImage: `url(${main})`,
                     backgroundSize: 'cover',
@@ -30,33 +30,33 @@ const Home = () => {
                 <div className='absolute top-0 left-0 w-full h-full bg-black/80 z-10'></div>
 
                 {/* hero content */}
-                <div className='relative z-20 w-full h-full flex justify-between px-[40px]'>
-                    <div className='flex flex-col justify-center text-white w-[50%] gap-6'>
+                <div className='relative z-20 w-full h-full sm:flex sm:flex-row sm:gap-0 gap-6 flex flex-col justify-between px-[40px] sm:py-0 py-[40px]'>
+                    <div className='flex flex-col justify-center text-white sm:w-[50%] w-full gap-6'>
                         <div>
                             <p className="text-[12px] bg-yellow-100/30 border text-yellow-500 border-yellow-500 w-fit px-2 py-0.5 rounded-lg">
                                 Strategic Excellence Since 2020
                             </p>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <h1 className="sm:text-4xl text-3xl font-bold">
+                            <h1 className="sm:text-4xl text-2xl font-bold">
                                 Empowering Growth Through{" "}
                                 <span className="bg-linear-to-r from-yellow-200 via-amber-400 to-orange-600 bg-clip-text text-transparent">
                                     Advocacy, Funding & EPC Expertise
                                 </span>
                             </h1>
-                            <p className="text-gray-400">Advanced security solutions tailored for your business. From CCTV surveillance to biometric access control, we provide comprehensive protection you can trust.</p>
+                            <p className="text-gray-400 sm:text-base text-sm">Advanced security solutions tailored for your business. From CCTV surveillance to biometric access control, we provide comprehensive protection you can trust.</p>
                         </div>
                         <div className='flex gap-6 items-center'>
                             <div>
-                                <h1 className='font-bold text-2xl text-[#FFD700]'>50+</h1>
+                                <h1 className='font-bold sm:text-2xl text-xl text-[#FFD700]'>50+</h1>
                                 <p className='text-sm text-gray-400'>Projects Delivered</p>
                             </div>
                             <div>
-                                <h1 className='font-bold text-2xl text-[#FFD700]'>$2B+</h1>
+                                <h1 className='font-bold sm:text-2xl text-xl text-[#FFD700]'>$2B+</h1>
                                 <p className='text-sm text-gray-400'>Funding Secured</p>
                             </div>
                             <div>
-                                <h1 className='font-bold text-2xl text-[#FFD700]'>15+</h1>
+                                <h1 className='font-bold sm:text-2xl text-xl text-[#FFD700]'>15+</h1>
                                 <p className='text-sm text-gray-400'>Countries Served</p>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const Home = () => {
                             <button onClick={() => navigate("/projects")} className="bg-white text-yellow-500 text-sm border border-yellow-400 px-6 py-2 rounded-md cursor-pointer hover:bg-yellow-500 hover:text-white transition-all duration-300">View Projects</button>
                         </div>
                     </div>
-                    <div className='w-[50%] flex flex-col relative px-[20px] justify-center gap-6'>
+                    <div className='sm:w-[50%] w-full flex flex-col relative px-[20px] justify-center gap-6'>
                         <div className='w-full border border-white/40 rounded-md bg-white/20 flex gap-6 text-white p-4 hover:bg-white/30'>
                             <div>
                                 <Scale size={30} color='gold' />
@@ -98,10 +98,10 @@ const Home = () => {
             </div>
             <div className='px-[40px] py-[40px] bg-white'>
                 <div className='flex flex-col w-full gap-1 items-center justify-center mb-[40px]'>
-                    <h1 className='font-bold text-3xl'>Strategic Solutions for Complex Projects</h1>
-                    <p className='text-sm text-center text-gray-500 w-[60%]'>EPC Partnaz delivers comprehensive consultancy services that bridge the gap between vision and execution. Our three core pillars ensure project success from start to finish.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl'>Strategic Solutions for Complex Projects</h1>
+                    <p className='sm:text-sm text-[12px] text-center text-gray-500 sm:w-[60%]'>EPC Partnaz delivers comprehensive consultancy services that bridge the gap between vision and execution. Our three core pillars ensure project success from start to finish.</p>
                 </div>
-                <div className='grid grid-cols-3 gap-4 mb-[40px]'>
+                <div className='sm:grid sm:grid-cols-3 sm:gap-4 flex flex-col gap-6 mb-[40px]'>
                     <div className='flex flex-col shadow-md rounded-md bg-white h-[500px]'>
                         <div className='relative w-full h-[50%]'>
                             <img src={adv} alt="" className='w-full rounded-md h-full object-cover' />
@@ -177,8 +177,8 @@ const Home = () => {
 
                 </div>
                 <div className='rounded-lg h-[300px] w-full p-6 flex flex-col gap-2 items-center justify-center bg-linear-to-r from-yellow-400 via-orange-500 to-yellow-600'>
-                    <h1 className='font-bold text-3xl'>Ready to Transform Your Project</h1>
-                    <p className='text-sm text-gray-600 text-center w-[60%]'>Let our experts guide you through every phase of your project. From initial consultation to final delivery, we're your strategic partner for success.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl'>Ready to Transform Your Project</h1>
+                    <p className='sm:text-sm text-[12px] text-gray-600 text-center sm:w-[60%]'>Let our experts guide you through every phase of your project. From initial consultation to final delivery, we're your strategic partner for success.</p>
                     <div className="sm:flex sm:flex-row sm:items-center sm:gap-2 gap-2 flex flex-col">
                         <button onClick={() => navigate("/contact")} className="bg-black text-white cursor-pointer px-6 py-2 rounded-md text-sm hover:bg-yellow-800 transition-all duration-300">Start Consultation</button>
                         <button onClick={() => navigate("/projects")} className="bg-white text-yellow-500 text-sm border border-yellow-400 px-6 py-2 rounded-md cursor-pointer hover:bg-yellow-500 hover:text-white transition-all duration-300">View Projects</button>
@@ -187,10 +187,10 @@ const Home = () => {
             </div>
             <div className='px-[40px] py-[40px] bg-black border-b border-gray-800'>
                 <div className='flex flex-col w-full gap-1 items-center justify-center mb-[40px]'>
-                    <h1 className='font-bold text-3xl text-white'>Industries We Serve</h1>
-                    <p className='text-sm text-center text-gray-500 w-[60%]'>From energy and infrastructure to specialized industrial projects, our expertise spans across critical sectors driving global economic growth.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl text-white'>Industries We Serve</h1>
+                    <p className='sm:text-sm text-[12px] text-center text-gray-500 sm:w-[60%]'>From energy and infrastructure to specialized industrial projects, our expertise spans across critical sectors driving global economic growth.</p>
                 </div>
-                <div className='grid grid-cols-3 gap-6 mb-[60px]'>
+                <div className='sm:grid sm:grid-cols-3 gap-6 flex flex-col mb-[60px]'>
                     <div className='flex flex-col bg-[#0f172a] h-[350px] rounded-md hover:border hover:border-yellow-500 transition-all duration-300'>
                         <div className='w-full h-[50%] relative rounded-md'>
                             <img src={energy} alt="energy" className='w-full h-full object-cover rounded-md' />
@@ -211,7 +211,7 @@ const Home = () => {
                                     <p className='text-sm text-gray-400'>Project Value</p>
                                 </div>
                                 <div>
-                                    <a href="/" className='text-sm text-yellow-500 flex items-center gap-1'>
+                                    <a href="/sectors/energy" className='text-sm text-yellow-500 flex items-center gap-1'>
                                         Explore
                                         <ArrowRight />
                                     </a>
@@ -239,7 +239,7 @@ const Home = () => {
                                     <p className='text-sm text-gray-400'>Project Value</p>
                                 </div>
                                 <div>
-                                    <a href="/" className='text-sm text-yellow-500 flex items-center gap-1'>
+                                    <a href="/sectors/oil" className='text-sm text-yellow-500 flex items-center gap-1'>
                                         Explore
                                         <ArrowRight />
                                     </a>
@@ -267,7 +267,7 @@ const Home = () => {
                                     <p className='text-sm text-gray-400'>Project Value</p>
                                 </div>
                                 <div>
-                                    <a href="/" className='text-sm text-yellow-500 flex items-center gap-1'>
+                                    <a href="/sectors/infrastructure" className='text-sm text-yellow-500 flex items-center gap-1'>
                                         Explore
                                         <ArrowRight />
                                     </a>
@@ -295,7 +295,7 @@ const Home = () => {
                                     <p className='text-sm text-gray-400'>Project Value</p>
                                 </div>
                                 <div>
-                                    <a href="/" className='text-sm text-yellow-500 flex items-center gap-1'>
+                                    <a href="/sectors/plants" className='text-sm text-yellow-500 flex items-center gap-1'>
                                         Explore
                                         <ArrowRight />
                                     </a>
@@ -323,7 +323,7 @@ const Home = () => {
                                     <p className='text-sm text-gray-400'>Project Value</p>
                                 </div>
                                 <div>
-                                    <a href="/" className='text-sm text-yellow-500 flex items-center gap-1'>
+                                    <a href="/sectors/water" className='text-sm text-yellow-500 flex items-center gap-1'>
                                         Explore
                                         <ArrowRight />
                                     </a>
@@ -351,7 +351,7 @@ const Home = () => {
                                     <p className='text-sm text-gray-400'>Project Value</p>
                                 </div>
                                 <div>
-                                    <a href="/" className='text-sm text-yellow-500 flex items-center gap-1'>
+                                    <a href="/sectors/special-projects" className='text-sm text-yellow-500 flex items-center gap-1'>
                                         Explore
                                         <ArrowRight />
                                     </a>
@@ -360,7 +360,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='grid grid-cols-4 mb-[40px]'>
+                <div className='sm:grid sm:grid-cols-4 sm:gap-0 flex flex-col gap-6 mb-[40px]'>
                     <div className='flex flex-col justify-center items-center'>
                         <h1 className='text-yellow-500 font-bold text-3xl'>84+</h1>
                         <p className='text-gray-500 text-sm'>Global Projects</p>
@@ -382,12 +382,12 @@ const Home = () => {
                     <button className='p-2 bg-yellow-500 rounded-md text-sm cursor-pointer hover:bg-yellow-700 hover:text-white transition-all duration-300'>View All Projects</button>
                 </div>
             </div>
-            <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 flex items-center justify-between gap-6'>
-                <div className='w-[50%] flex flex-col gap-2'>
-                    <h1 className='text-3xl text-white font-bold'>Stay Updated with Industry Insights</h1>
-                    <p className='text-gray-500 text-sm'>Get the latest updates on EPC projects, funding opportunities, and industry trends directly in your inbox. Join our network of industry professionals.</p>
+            <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 sm:flex sm:flex-row sm:items-center sm:justify-between gap-6 flex flex-col'>
+                <div className='sm:w-[50%] flex flex-col gap-2'>
+                    <h1 className='sm:text-3xl text-xl text-white font-bold'>Stay Updated with Industry Insights</h1>
+                    <p className='text-gray-500 sm:text-sm text-[12px]'>Get the latest updates on EPC projects, funding opportunities, and industry trends directly in your inbox. Join our network of industry professionals.</p>
                 </div>
-                <div className='w-[50%]'>
+                <div className='sm:w-[50%]'>
                     <form action="" className='flex items-center gap-2 w-[85%]'>
                         <input type="email" className='border border-gray-600 text-gray-600 rounded-md bg-[#1e293b] p-2 w-full' placeholder='Enter your email address' />
                         <button className='bg-yellow-500 px-3 py-2 rounded-md text-sm'>Subscribe</button>
