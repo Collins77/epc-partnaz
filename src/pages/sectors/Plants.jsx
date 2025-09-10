@@ -8,23 +8,23 @@ const Plants = () => {
             <div className='px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 justify-center relative' style={{ backgroundImage: `url(${industry})`, backgroundSize: 'cover', backgroundPosition: 'bottom', backgroundRepeat: 'no-repeat' }}>
                 <div className='absolute top-0 left-0 w-full h-full bg-black/60 z-10'></div>
                 <div className='relative z-20 flex flex-col gap-4'>
-                    <div className="flex flex-col gap-2 items-start justify-center">
+                    <div className="flex flex-col gap-2 sm:items-start items-center justify-center">
                         <h1 className="sm:text-4xl text-2xl font-bold bg-linear-to-r from-yellow-200 via-amber-400 to-orange-600 bg-clip-text text-transparent">
                             Industrial Plants
                         </h1>
-                        <p className="text-gray-300 sm:w-[60%] sm:text-normal text-sm">Designing and delivering world-class industrial facilities with advanced technology, sustainable practices, and optimal operational efficiency.</p>
+                        <p className="text-gray-300 sm:w-[60%] sm:text-normal sm:text-start text-center text-sm">Designing and delivering world-class industrial facilities with advanced technology, sustainable practices, and optimal operational efficiency.</p>
                     </div>
-                    <div className='grid grid-cols-3 gap-2 items-start w-[50%]'>
+                    <div className='grid grid-cols-3 gap-2 sm:items-start items-center sm:w-[50%]'>
                         <div className='flex items-center flex-col'>
-                            <h1 className='text-3xl font-bold text-yellow-500'>15+</h1>
+                            <h1 className='sm:text-3xl text-xl font-bold text-yellow-500'>15+</h1>
                             <p className='text-sm text-gray-300'>Industries Served</p>
                         </div>
                         <div className='flex items-center flex-col'>
-                            <h1 className='text-3xl font-bold text-yellow-500'>85+</h1>
+                            <h1 className='sm:text-3xl text-xl font-bold text-yellow-500'>85+</h1>
                             <p className='text-sm text-gray-300'>Plants Delivered</p>
                         </div>
                         <div className='flex items-center flex-col'>
-                            <h1 className='text-3xl font-bold text-yellow-500'>99.5%</h1>
+                            <h1 className='sm:text-3xl text-xl font-bold text-yellow-500'>99.5%</h1>
                             <p className='text-sm text-gray-300'>Uptime Achieved</p>
                         </div>
                     </div>
@@ -33,10 +33,10 @@ const Plants = () => {
             </div>
             <div className='bg-white px-[40px] py-[60px]'>
                 <div className='flex flex-col gap-1 items-center mb-[40px]'>
-                    <h1 className='font-bold text-3xl'>Core Capabilities</h1>
-                    <p className='text-gray-500 text-center w-[60%]'>Comprehensive industrial plant solutions from concept design to commissioning and beyond.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl'>Core Capabilities</h1>
+                    <p className='text-gray-500 text-center sm:w-[60%] sm:text-base text-sm'>Comprehensive industrial plant solutions from concept design to commissioning and beyond.</p>
                 </div>
-                <div className='grid grid-cols-4 gap-6'>
+                <div className='sm:grid sm:grid-cols-4 flex flex-col gap-6'>
                     <div className='flex flex-col gap-3 items-center hover:shadow-md p-3 rounded-md'>
                         <div className='w-[50px] h-[50px] bg-yellow-500 rounded-md flex items-center justify-center'>
                             <Factory />
@@ -69,10 +69,10 @@ const Plants = () => {
             </div>
             <div className='bg-[#f9fafc] px-[40px] py-[60px]'>
                 <div className='flex flex-col gap-1 items-center mb-[40px]'>
-                    <h1 className='font-bold text-3xl'>Featured Projects</h1>
-                    <p className='text-gray-500 text-center w-[60%]'>Showcasing our expertise in delivering complex industrial facilities across various sectors.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl'>Featured Projects</h1>
+                    <p className='text-gray-500 text-center sm:w-[60%] sm:text-base text-sm'>Showcasing our expertise in delivering complex industrial facilities across various sectors.</p>
                 </div>
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='sm:grid sm:grid-cols-3 flex flex-col gap-6'>
                     <div className='p-4 bg-white shadow-md rounded-md flex flex-col gap-3'>
                         <div className='flex items-center justify-between'>
                             <h1 className='font-bold text-sm'>Chemical Complex - Singapore</h1>
@@ -127,16 +127,16 @@ const Plants = () => {
                 </div>
             </div>
             <div className='px-[40px] py-[60px] bg-linear-to-r from-yellow-400 via-orange-500 to-yellow-600 flex flex-col gap-3 items-center justify-center'>
-                <h1 className='text-3xl font-bold'>Ready to Optimize Your Industrial Operations?</h1>
-                <p className='text-gray-700 w-[60%] text-center'>Partner with us to design and build industrial facilities that set new standards for efficiency and sustainability.</p>
+                <h1 className='sm:text-3xl text-xl font-bold'>Ready to Optimize Your Industrial Operations?</h1>
+                <p className='text-gray-700 sm:w-[60%] sm:text-base text-sm text-center'>Partner with us to design and build industrial facilities that set new standards for efficiency and sustainability.</p>
                 <button className='bg-black px-4 py-2 text-white cursor-pointer rounded-md hover:bg-yellow-500 transition-all duration-300'>Discuss Your Industrial Project</button>
             </div>
-            <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 flex items-center justify-between gap-6'>
-                <div className='w-[50%] flex flex-col gap-2'>
-                    <h1 className='text-3xl text-white font-bold'>Stay Updated with Industry Insights</h1>
-                    <p className='text-gray-500 text-sm'>Get the latest updates on EPC projects, funding opportunities, and industry trends directly in your inbox. Join our network of industry professionals.</p>
+            <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 sm:flex sm:flex-row sm:items-center sm:justify-between gap-6 flex flex-col'>
+                <div className='sm:w-[50%] flex flex-col gap-2'>
+                    <h1 className='sm:text-3xl text-xl text-white font-bold'>Stay Updated with Industry Insights</h1>
+                    <p className='text-gray-500 sm:text-sm text-[12px]'>Get the latest updates on EPC projects, funding opportunities, and industry trends directly in your inbox. Join our network of industry professionals.</p>
                 </div>
-                <div className='w-[50%]'>
+                <div className='sm:w-[50%]'>
                     <form action="" className='flex items-center gap-2 w-[85%]'>
                         <input type="email" className='border border-gray-600 text-gray-600 rounded-md bg-[#1e293b] p-2 w-full' placeholder='Enter your email address' />
                         <button className='bg-yellow-500 px-3 py-2 rounded-md text-sm'>Subscribe</button>
