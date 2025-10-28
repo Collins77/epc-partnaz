@@ -46,7 +46,7 @@ const Contact = () => {
                             <textarea name="message" id="" cols={12} className='border border-gray-300 py-1 px-2 rounded-lg text-sm outline-yellow-400'></textarea>
                         </div>
                         <div>
-                            <button className='bg-yellow-600 text-white flex gap-2 items-center py-1 w-full rounded-md justify-center text-sm'>
+                            <button className='bg-yellow-600 text-white flex gap-2 items-center py-1 w-full rounded-md justify-center text-sm hover:bg-yellow-800 duration-300 transition-all cursor-pointer'>
                                 <Send size={12} />
                                 Send Message
                             </button>
@@ -59,7 +59,7 @@ const Contact = () => {
                         <p className='text-gray-500 sm:text-normal text-sm'>Our security experts are ready to help you protect your business. Contact us today for a free consultation.</p>
                     </div>
                     <div className='flex flex-col gap-4'>
-                        <div className='p-4 flex gap-4 bg-white shadow-lg rounded-md'>
+                        {/* <div className='p-4 flex gap-4 bg-white shadow-lg rounded-md'>
                             <div className='w-[40px] h-[40px] bg-linear-to-r from-yellow-200 via-amber-400 to-orange-600 rounded-md flex items-center justify-center'>
                                 <Phone color='white' />
                             </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                                 <p className='text-sm text-gray-600'>+254712345678</p>
                                 <p className='text-[12px] text-gray-500'>Available 24/7</p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='p-4 flex gap-4 bg-white shadow-lg rounded-md'>
                             <div className='w-[40px] h-[40px] bg-linear-to-r from-yellow-200 via-amber-400 to-orange-600 rounded-md flex items-center justify-center'>
                                 <Mail color='white' />
@@ -87,8 +87,8 @@ const Contact = () => {
                             </div>
                             <div className='flex flex-col gap-1'>
                                 <h1 className='text-sm font-bold'>Location</h1>
-                                <p className='text-sm text-gray-600'>123 Security Boulevard</p>
-                                <p className='text-sm text-gray-600'>Business District, State 12345</p>
+                                <p className='text-sm text-gray-600'>BOX 03001-01</p>
+                                <p className='text-sm text-gray-600'>Nairobi Kenya</p>
                                 <p className='text-[12px] text-gray-500'>Visit our offices</p>
                             </div>
                         </div>

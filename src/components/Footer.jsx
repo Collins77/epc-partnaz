@@ -21,8 +21,8 @@ const Footer = () => {
             </div>
             <div className='flex flex-col gap-3'>
               <div className='flex items-center gap-2'>
-                <Phone color='#eab308' size={16} />
-                <p className='text-gray-500 text-sm'>+254712345678</p>
+                {/* <Phone color='#eab308' size={16} /> */}
+                {/* <p className='text-gray-500 text-sm'>+254712345678</p> */}
               </div>
               <div className='flex items-center gap-2'>
                 <Mail color='#eab308' size={16} />

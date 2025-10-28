@@ -1,8 +1,11 @@
 import React from 'react'
 import env from '../../assets/env.jpg'
 import { Droplets, Funnel, Leaf, Recycle } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const Water = () => {
+    const navigate = useNavigate();
+    
     return (
         <div>
             <div className='px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 justify-center relative' style={{ backgroundImage: `url(${env})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
@@ -129,7 +132,7 @@ const Water = () => {
             <div className='px-[40px] py-[60px] bg-linear-to-r from-yellow-400 via-orange-500 to-yellow-600 flex flex-col gap-3 items-center justify-center'>
                 <h1 className='sm:text-3xl text-xl font-bold'>Ready to Create Sustainable Water Solutions?</h1>
                 <p className='text-gray-700 sm:w-[60%] sm:text-base text-sm text-center'>Let's work together to develop innovative water and environmental technologies for a sustainable future.</p>
-                <button className='bg-black px-4 py-2 text-white cursor-pointer rounded-md hover:bg-yellow-500 transition-all duration-300'>Start Your Water Project</button>
+                <button onClick={() => navigate('/contact')} className='bg-black px-4 py-2 text-white cursor-pointer rounded-md hover:bg-yellow-500 transition-all duration-300'>Start Your Water Project</button>
             </div>
             <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 sm:flex sm:flex-row sm:items-center sm:justify-between gap-6 flex flex-col'>
                 <div className='sm:w-[50%] flex flex-col gap-2'>

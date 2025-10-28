@@ -1,8 +1,10 @@
 import React from 'react'
 import spesh from '../../assets/spesheli.jpg'
 import { Cpu, Dot, Globe, Lightbulb, Zap } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const Special = () => {
+    const navigate  = useNavigate()
     return (
         <div>
             <div className='px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 justify-center relative' style={{ backgroundImage: `url(${spesh})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
@@ -184,7 +186,7 @@ const Special = () => {
             <div className='px-[40px] py-[60px] bg-linear-to-r from-yellow-400 via-orange-500 to-yellow-600 flex flex-col gap-3 items-center justify-center'>
                 <h1 className='sm:text-3xl text-xl font-bold'>Ready to Pioneer the Future?</h1>
                 <p className='text-gray-700 sm:w-[60%] sm:text-base text-sm text-center'>Let's collaborate on groundbreaking projects that push the boundaries of what's possible.</p>
-                <button className='bg-black px-4 py-2 text-white cursor-pointer rounded-md hover:bg-yellow-500 transition-all duration-300'>Explore Special Projects</button>
+                <button onClick={() => navigate('/contact')} className='bg-black px-4 py-2 text-white cursor-pointer rounded-md hover:bg-yellow-500 transition-all duration-300'>Explore Special Projects</button>
             </div>
             <div className='px-[40px] py-[60px] bg-black border-b border-gray-800 sm:flex sm:flex-row sm:items-center sm:justify-between gap-6 flex flex-col'>
                 <div className='sm:w-[50%] flex flex-col gap-2'>
